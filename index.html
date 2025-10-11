@@ -99,30 +99,25 @@
             margin: 1rem 0;
         }
         
-        .photo-gallery {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin: 2rem 0;
-        }
-        
-        .photo-item {
-            text-align: center;
-            max-width: 300px;
-        }
-        
-        .photo-item img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        
-        .caption {
-            margin-top: 10px;
-            font-weight: bold;
-            color: #1a2a6c;
-        }
+       .photo-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.photo-item {
+    width: 300px; /* или любой другой размер */
+    height: 300px; /* сделайте высоту равной ширине для квадрата */
+    overflow: hidden;
+    position: relative;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* важно: обрезает изображение чтобы заполнить контейнер */
+    display: block;
+}
         
         .contact-info {
             background-color: #f0f5ff;
@@ -206,7 +201,7 @@
                     <p class="caption">Бувайсар Сайтиев</p>
                 </div>
                 <div class="photo-item">
-                    <img src="saitiev.jpeg" alt="Абдулрашид Садулаев">
+                    <img src="sadulaev.jpg"Абдулрашид Садулаев">
                     <p class="caption">Абдулрашид Садулаев</p>
                 </div>
             </div>
